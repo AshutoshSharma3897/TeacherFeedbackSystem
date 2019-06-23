@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="upload.css">
+	<script type="text/javaScript" src="log.js">  </script>
+    </head>
+    <body onload="demo()">
+        <div id="upload">
+	<ul>
+        <li>You are Logged In</li>
+	<li><a class="link" href="ShowFeedback">FeedbackPage</li>
+	<li><a href="attendance.html" class="link">Attendance</a></li>
+	
+	</ul>
+        </div>
+        <div>
+        <p id="u"><h1>Upload Time Table Here</h1></p>
+        </div><center>
+        <form action="ServerUpload" method="get" name="form1">
+            <div id="uform">
+                <table cellpadding=20px id="tab">
+                    <tr>
+                        <td>Subjects</td><td>Class_Starts</td><td>Class_Ends</td>
+                     </tr>
+                    <tr>
+                        <td><input type="text" readonly name="s1" value="English"  class="t"></td>
+                        <td><input type="text" placeholder="Class_Starts" name="cs1" class="t"></td>
+                        <td><input type="text" placeholder="Class_Ends" name="ce1" class="t"></td>
+                     </tr>
+                    <tr>
+                        <td><input type="text" readonly name="s2" value="Hindi" class="t"></td>
+                        <td><input type="text" placeholder="Class_Starts" name="cs2" class="t"></td>
+                        <td><input type="text" placeholder="Class_Ends" name="ce2" class="t"></td>
+                     </tr>
+                     <tr>
+                        <td><input type="text" readonly name="s3" value="Maths" class="t"></td>
+                        <td><input type="text" placeholder="Class_Starts" name="cs3" class="t"></td>
+                        <td><input type="text" placeholder="Class_Ends" name="ce3" class="t"></td>
+                     </tr>
+                     <tr>
+                        <td><input type="text" readonly name="s4"  value="Physics" class="t"></td>
+                        <td><input type="text" placeholder="Class_Starts" name="cs4" class="t"></td>
+                        <td><input type="text" placeholder="Class_Ends" name="ce4" class="t"></td>
+                     </tr> 
+                     <tr>
+                        <td><input type="text" placeholder="Subject_Name" readonly name="s5" value="Chemistry" class="t"></td>
+                        <td><input type="text" placeholder="Class_Starts" name="cs5" class="t"></td>
+                        <td><input type="text" placeholder="Class_Ends" name="ce5" class="t"></td>
+                     </tr>
+                    <tr><th colspan="3"><input type="submit" value="Upload" class="b"></th></tr>
+                </table>
+                </center>
+            </div>
+        </form>
+       
+    </body>
+</html>

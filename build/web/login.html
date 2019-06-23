@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javaScript" src="log.js">  </script>
+</head>
+<body onload="demo()">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/reader-512.png" alt="IMG">
+				</div>
+				<form class="login100-form validate-form" action="ServerLogin" method="post" name="form1">
+					<div><table>
+					<span class="login100-form-title">
+					   Welcome to the Feedback Panel
+					</span>
+						<div class="wrap-input100 validate-input" >
+						<tr>
+                     Student:<input type="radio" value="Student" name="u1" ><font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                     Teacher:<input type="radio" value="Teacher" name="u1">
+						</tr>
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid User id is required: ex@abc.xyz">
+					<tr>
+                        <td>User Id</td>
+                        <td><br> <input class="input100" type="text" name="email" placeholder="User Id"><br></td>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</tr>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<tr>
+                        <td>Password</td>
+                        <td><br><input class="input100" type="password" name="pass" placeholder="Password" ><br></td>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</tr>
+					</div>
+					
+					<div class="container-login100-form-btn">
+                                            <tr><th colspan="2"><br><input type="submit" class="login100-form-btn" value="Login"><br></th></tr>
+					</div></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
